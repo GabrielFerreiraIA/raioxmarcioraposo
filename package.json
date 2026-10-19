@@ -1,0 +1,12 @@
+{
+  "name": "raiox-marcio-raposo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "22.x" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node --env-file=.env.local scripts/serve.mjs",
+    "test": "node --test tests/auth.test.mjs"
+  }
+}

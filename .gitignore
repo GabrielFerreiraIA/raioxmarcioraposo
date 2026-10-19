@@ -1,0 +1,6 @@
+.private/
+*.zip
+node_modules/
+.env*
+!.env.example
+.vercel/
