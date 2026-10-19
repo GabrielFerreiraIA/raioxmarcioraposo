@@ -8,6 +8,7 @@
   <title>Acesso ao Raio-X | Multiplix</title>
   <link rel="icon" href="/assets/multiplix-symbol.jpg">
   <link rel="stylesheet" href="/login.css">
+  <script defer src="/login.js"></script>
 </head>
 <body>
   <main class="login-screen">
@@ -17,10 +18,10 @@
         <p class="eyebrow"><span aria-hidden="true"></span> ACESSO AO RAIO-X · MARCIO RAPOSO</p>
         <h1 id="login-title">Sua análise comercial está pronta.</h1>
         <p class="login-intro">Jaerty e Leo, este é o mapa dos pontos discutidos no diagnóstico e das perguntas que orientam a próxima conversa.</p>
-        <form method="post" action="/login">
+        <form id="login-form">
           <label for="password">Senha de acesso</label>
           <div class="login-fields"><input id="password" name="password" type="password" autocomplete="current-password" required maxlength="256" placeholder="Digite a senha"><button type="submit">Acessar <span aria-hidden="true">→</span></button></div>
-          <div class="login-feedback">{{ERROR}}</div>
+          <div class="login-feedback"><p class="error" id="login-error" role="alert" aria-live="polite"></p></div>
         </form>
       </div>
       <p class="login-foot">MULTIPLIX <span>×</span> IMOBILIÁRIA MARCIO RAPOSO</p>

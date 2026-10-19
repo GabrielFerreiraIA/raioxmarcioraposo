@@ -1,4 +1,8 @@
 const chapterLinks = [...document.querySelectorAll('nav a')];
+document.getElementById('logout')?.addEventListener('click', () => {
+  try { sessionStorage.removeItem('multiplix-marcio-raposo'); } catch {}
+  window.location.replace('/');
+});
 if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver(entries => {
     for (const entry of entries) {
